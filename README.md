@@ -1,2 +1,2 @@
-# extended-Instrumental-Variable-approach
-R code to the paper: Combining Instrumental Variable, Confounderadjustment and Difference-in-Difference methods inobservational data, with application to Type II Diabetes 
+# prior-outcome-augmented-Instrumental-Variable-approach
+R code to the paper: Combining Instrumental Variable, confounder adjustment and Difference-in-Difference methods for comparative effectiveness research in observational data

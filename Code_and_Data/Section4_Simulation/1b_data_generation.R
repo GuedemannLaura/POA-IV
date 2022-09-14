@@ -26,10 +26,10 @@ eY1          <- rnorm(n, 4, 1)
 
 if(scenario == 1 | scenario == 2){
 
-  Ye0       <- beta0_Y0 + betaW_Y0*W0  #+ betae_Y0*eY0
+  Ye0       <- beta0_Y0 + betaW_Y0*W0  
   
 }else{
-  Ye0       <- beta0_Y0 + betaU_Y0*U + betaW_Y0*W0  #+ betae_Y0*eY0
+  Ye0       <- beta0_Y0 + betaU_Y0*U + betaW_Y0*W0 
 }
 
 
@@ -63,11 +63,11 @@ X    <- rbinom(n,1,pX)
 
 if(scenario == 1 | scenario == 3){
 
-  Ye1  <- beta0_Y1 + betaU_Y1*U + Beta*X + betaW_Y1*W1 + betaZ_Y1*Z #+ betae_Y1*eY1
+  Ye1  <- beta0_Y1 + betaU_Y1*U + Beta*X + betaW_Y1*W1 + betaZ_Y1*Z 
 
 }else{
   
-  Ye1  <- beta0_Y1 + betaU_Y1*U + Beta*X + betaW_Y1*W1 + betaZ_Y1*Z + betaY0_Y1*Y0 #+ betae_Y1*eY1
+  Ye1  <- beta0_Y1 + betaU_Y1*U + Beta*X + betaW_Y1*W1 + betaZ_Y1*Z + betaY0_Y1*Y0 
   
 }
 

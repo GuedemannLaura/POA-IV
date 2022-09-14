@@ -3,9 +3,6 @@
 #
 
 
-scenario      <- 1                                    # Can take on values c(1,2,3,4,5,6,7,8)
-
-
 if(scenario == 1){
   unmeasured_confounding <- FALSE
   IV_violation           <- FALSE

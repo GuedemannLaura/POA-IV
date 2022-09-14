@@ -6,9 +6,9 @@
 # Working Directory and Paths --------------------------------------------------
 #
 
-setwd("")                                                                       # insert path to main folder of this project
+setwd("")                                                                       # insert path to main folder "Code_and_Data" 
 
-folder_main_code <- "Section3_Qe"                                               # insert name of the section folder
+folder_main_code <- "Section3_Qe"                                               # name of the section folder
 
 source("paths.R")
 
@@ -33,6 +33,9 @@ source("functions.R")
 
 # possible scenarios for this simulation: c(1,2,3,4,5,6,7,8)
 
+scenario      <- 1                                                              # chose simulation scenario here: can take on values c(1,2,3,4,5,6,7,8)
+
+
 source(paste0(folder_main_code, "/1a_decision_on_scenario.R"))
 
 
@@ -50,8 +53,8 @@ seed_choice <- c(6015, 17170, 9511, 22107, 985, 4575, 25709, 19871)
 
 set.seed(seed_choice[scenario])
 
-S <- 500  # Number of simulation runs 
-B <- 500  # Number of boostrap in each simulation run
+S <- 500                                                                        # Number of simulation runs 
+B <- 500                                                                        # Number of boostraps in each simulation run
 
 
 
@@ -260,9 +263,11 @@ print(paste0("Simulation run i = ", i, " complete"))
 
 save.image(paste0(path_workspaces, "simulation_workspace_scenario_",scenario,".RData"))
 
+
+
 #
-# Results ----------------------------------------------------------------------
-#
+# Results ---------------------------------------------------------------------
+# 
 
 table(testQ_CaT_CF)/length(testQ_CaT_CF)*100
 table(testQ2_CaT_CF)/length(testQ2_CaT_CF)*100
@@ -272,8 +277,6 @@ table(testQ2_CaT_DiD)/length(testQ2_CaT_DiD)*100
 
 table(testQ_CF_DiD)/length(testQ_CF_DiD)*100
 table(testQ2_CF_DiD)/length(testQ2_CF_DiD)*100
-
-
 
 
 

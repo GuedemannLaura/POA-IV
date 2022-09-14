@@ -6,9 +6,9 @@
 # Working Directory and Paths --------------------------------------------------
 #
 
-setwd("")                                                                       # insert path to main folder of this project
+setwd("")                                                                       # insert path to main folder "Code_and_Data" 
 
-folder_main_code <- "Section3_Simulation"                                                  # insert name of the section folder
+folder_main_code <- "Section3_Simulation"                                       # name of the section folder
 
 
 source("paths.R")
@@ -25,8 +25,8 @@ source("R_packages.R")
 # Decision on the Scenario and set seed ----------------------------------------
 #
 
+scenario      <- 1                                                              # chose scenarios here: Can take on values c(1,2,3,4,5,6,7,8)
 
-# possible scenarios for this simulation: c(1,2,3,4,5,6,7,8)
 
 source(paste0(folder_main_code, "/1a_decision_on_scenario.R"))
 
